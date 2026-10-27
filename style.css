@@ -1,0 +1,111 @@
+/* ---------- Page ---------- */
+header[data-testid="stHeader"] { background: transparent; }
+.block-container { padding-top: 2.5rem; max-width: 820px; }
+
+/* ---------- Title ---------- */
+.title {
+    text-align: center;
+    color: #ffffff !important;
+    font-weight: 800;
+    font-size: 2.6rem;
+    text-shadow: 0 3px 12px rgba(0, 0, 0, 0.6);
+    margin-bottom: 0;
+}
+.subtitle {
+    text-align: center;
+    color: #e8f5e9 !important;
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+/* ---------- Form card (glass effect) ---------- */
+[data-testid="stForm"] {
+    background: rgba(255, 255, 255, 0.14);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    border-radius: 20px;
+    padding: 1.8rem 1.8rem 1.2rem 1.8rem;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.35);
+}
+
+.section {
+    color: #ffffff !important;
+    font-size: 1.2rem !important;
+    margin-top: 0.4rem;
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
+}
+
+/* ---------- Labels & inputs ---------- */
+[data-testid="stForm"] label,
+[data-testid="stForm"] label p {
+    color: #ffffff !important;
+    font-weight: 600;
+}
+[data-testid="stNumberInput"] input {
+    background: rgba(255, 255, 255, 0.92) !important;
+    color: #1b3a1b !important;
+    font-weight: 600;
+    border-radius: 10px;
+}
+[data-testid="stNumberInput"] button {
+    background: rgba(255, 255, 255, 0.85);
+    color: #1b3a1b;
+}
+
+/* ---------- Button ---------- */
+div[data-testid="stFormSubmitButton"] { text-align: center; }
+div[data-testid="stFormSubmitButton"] button {
+    width: 100%;
+    background: linear-gradient(135deg, #43a047, #1b5e20);
+    color: #ffffff;
+    font-size: 1.15rem;
+    font-weight: 700;
+    border: none;
+    border-radius: 12px;
+    padding: 0.7rem 1rem;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+div[data-testid="stFormSubmitButton"] button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.4);
+    color: #ffffff;
+    border: none;
+}
+
+/* ---------- Result card ---------- */
+.result-card {
+    margin-top: 1.6rem;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.93);
+    border-radius: 20px;
+    padding: 1.6rem 1rem;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+    animation: pop 0.5s ease;
+}
+.result-emoji { font-size: 3.2rem; }
+.result-label { color: #4e6b4e; font-size: 1rem; letter-spacing: 1px; text-transform: uppercase; }
+.result-crop  { color: #1b5e20; font-size: 2.4rem; font-weight: 800; }
+
+.alt-card {
+    margin-top: 1rem;
+    background: rgba(255, 255, 255, 0.85);
+    color: #1b3a1b;
+    border-radius: 16px;
+    padding: 0.8rem 1.4rem;
+}
+.alt-card ul { margin: 0.3rem 0 0 0; padding-left: 1.2rem; }
+
+.footer {
+    text-align: center;
+    color: #e0e0e0 !important;
+    font-size: 0.85rem;
+    margin-top: 2rem;
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.7);
+}
+
+@keyframes pop {
+    from { transform: scale(0.9); opacity: 0; }
+    to   { transform: scale(1);   opacity: 1; }
+}
